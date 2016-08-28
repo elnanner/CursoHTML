@@ -1,0 +1,18 @@
+p{
+	color: red;
+}
+.p2{
+	
+	font-size: 10pt;
+	font-weight: 100pt;
+	color: green;
+	line-height: 40px;
+	text-decoration: normal;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	text-shadow: 3px 3px 3px grey;
+	
+}
+h1{
+	text-align: center;
+}
