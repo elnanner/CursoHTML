@@ -2,27 +2,13 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-
-	<link rel="stylesheet" type="text/css" href="/home/luciano/CursoHTML/css/estilos.css">
+	<title>Practicando...</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
 <body>
-<header>
-	<nav>
-		<li>inicio</li>
-		<li>login</li>
-		<li>listado</li>
-		<li>info</li>
-		<li>contacto</li>
-	</nav>
-</header>
-<h2>Pronostico</h2>
-	<p>
-
-, por lo menos hasta el día martes 12.</p>
+	<h1>Practicando...</h1>
 	<a href="#" class="acceso"> saraza </a>
-	<link rel="stylesheet" type="text/css" href="/home/luciano/CursoHTML/css/estilohtml.css">
 	<form>
 		<input type="text" placeholder="Ingrese nombre"></input>
 		<br/><br/>
@@ -31,60 +17,17 @@
 		<input type="email" name="" ></input>
 		<br/><br/>
 
-		<input type="button" value="Acceder" class="acceso"></input>
+		<input type="button" value="Acceder" class="acceso" onclick="saludo();"></input>
 		<br/><br/>
-		<input type="button" value="cambiarColor" ></input>
+		<input type="button" value="cambiarColor" onclick="cambiarColor()"></input>
 		<br/><br/>
 		<input id='btnc' type="color" onchange="cambiarFondo(this)"></input>
 		<br/><br/>
 		<br/><br/>
 		<input type="button" id="botontempo"name="" value="Temporizador" onclick="temporizador()">
 		<p id="tempo"></p>
-		<div>
-			<video
-				src="/home/luciano/Descargas/20000besos.mp4">	</video>
-		</div>
-
 	</form>
-	<script type="text/javascript">
-		function cambiarColor(){
-			var body = document.getElementsByTagName('body');
-			var boton = document.getElementById('btnc');
-			body[0].style.backgroundColor = boton.value;
-
-		}
-		function cambiarFondo(elemento){
-			document.getElementsByTagName('input')[1].style.backgroundColor=elemento.value;
-		}
-	</script>
+	<script type="text/javascript" src="js/testing.js"></script>
 </body>
 <footer> luciano matsuo <p id="time"></p></footer>
-		<script>
-		function reloj(){
-			var time = setInterval(mostrar, 1000);
-			function mostrar(){
-				var d = new Date();
-				document.getElementById('time').innerHTML = "<b>"+d.toLocaleTimeString()+"</b>";
-			}
-
-		}
-		var num = 5;
-		function temporizador(){
-			var temp = setInterval(temporiza, 1000);
-			function temporiza(){
-				if(num==0){
-					alert("SU tiempo ha expirado");
-					clearInterval(temp);
-					document.getElementById("botontempo").disabled=<true></true>;
-				}
-				document.getElementById("tempo").innerHTML=num;
-				num--;
-
-			}
-
-		}
-
-
-		</script>
-
 </html>
