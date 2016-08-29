@@ -1,0 +1,32 @@
+:invalid{
+  border-color:red;
+
+}
+:valid{
+  border-color: green;
+
+}
+body{
+  background:url(../favicon.jpg);
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
+div{
+  width: 500px;
+  height: 50px;
+  background-color: red;
+  transition: width .2s, height 1s, transform .5s;
+  transform: rotate(90deg);
+
+}
+.div-escalable{
+  animation: cambiarColor 2s;
+  width:500px;
+  height:50px;
+  transform: rotate(0deg);
+
+}
+@-moz-keyframes cambiarColor{
+  0%{background: red;}
+  100%{background: blue;}
+}
